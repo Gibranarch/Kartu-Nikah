@@ -1,0 +1,32 @@
+.quote-section {
+  padding: 0 1rem;
+  position: relative;
+}
+
+.quote-card {
+  text-align: center;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.quote-icon {
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.92);
+  max-width: 320px;
+  margin: 0 auto 1rem;
+}
+
+.quote-source {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.70);
+}

@@ -1,0 +1,83 @@
+.event-section {
+  padding: 0 1rem 0;
+  background-color: var(--color-cream);
+}
+
+.event-card-block {
+  /* Brown card extends with rounded top (from Quote section continuation) */
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  text-align: center;
+  padding: 2rem 1.5rem 2.5rem;
+}
+
+.event-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.event-separator {
+  width: 80%;
+  height: 1px;
+  background: rgba(255,255,255,0.20);
+  margin: 1.5rem auto;
+}
+
+.event-rings {
+  margin-bottom: 0.25rem;
+}
+
+.event-title {
+  font-family: var(--font-script);
+  font-size: 2.2rem;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.event-details {
+  color: rgba(255,255,255,0.88);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.event-date {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.event-time {
+  font-size: 0.85rem;
+}
+
+.event-venue {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.event-map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: var(--color-offwhite);
+  color: var(--color-brown);
+  border-radius: var(--radius-full);
+  padding: 0.7rem 2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 0.75rem;
+  width: 100%;
+  max-width: 260px;
+  justify-content: center;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.event-map-btn:hover {
+  background-color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}

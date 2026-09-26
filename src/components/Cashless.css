@@ -1,0 +1,112 @@
+.cashless-section {
+  background-color: var(--color-cream);
+}
+
+/* ── Brown header block ─────────────────────────────── */
+.cashless-card-block {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  margin: 0 1rem;
+  text-align: center;
+  padding: 2rem 1.5rem 2.5rem;
+}
+
+.cashless-title {
+  font-family: var(--font-script);
+  font-size: 2.4rem;
+  color: #fff;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.cashless-desc {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* ── Account cards (white) ──────────────────────────── */
+.cashless-accounts {
+  background-color: var(--color-brown);
+  padding: 0 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.account-card {
+  background-color: var(--color-offwhite);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.account-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.6rem;
+}
+
+.account-bank-logo {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-brown-dark);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.account-dots {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  letter-spacing: 3px;
+}
+
+.account-card__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.account-name {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--color-text-main);
+  margin-bottom: 0.2rem;
+}
+
+.account-number {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.5px;
+}
+
+/* ── Copy button ────────────────────────────────────── */
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--color-brown);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.btn-copy:hover {
+  background-color: var(--color-brown-dark);
+}
+
+.btn-copy--copied {
+  background-color: #4caf50;
+}

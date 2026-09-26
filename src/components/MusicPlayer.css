@@ -1,0 +1,57 @@
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes ripple-out {
+  0%   { transform: scale(1);  opacity: 0.5; }
+  100% { transform: scale(2.2); opacity: 0;   }
+}
+
+/* ── Floating music button ──────────────────────────── */
+.music-fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--color-brown);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.30);
+  transition: background 0.25s, transform 0.2s;
+  overflow: hidden;
+}
+
+.music-fab:hover {
+  background-color: var(--color-brown-dark);
+  transform: scale(1.08);
+}
+
+.music-fab--playing svg {
+  animation: spin-slow 4s linear infinite;
+}
+
+/* ── Ripple effect when playing ─────────────────────── */
+.music-fab__ripple {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+  animation: ripple-out 1.5s ease-out infinite;
+  pointer-events: none;
+}
+
+/* Align inside canvas on desktop */
+@media (min-width: 481px) {
+  .music-fab {
+    /* offset by canvas width and center */
+    right: calc(50% - var(--canvas-width) / 2 + 1rem);
+  }
+}

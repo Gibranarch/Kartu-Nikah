@@ -1,0 +1,19 @@
+.cover-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  background-color: #1a1410;
+}
+
+.cover-overlay > div {
+  width: 100%;
+  max-width: var(--canvas-width);
+  height: 100%;
+}
+
+.invitation-content {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+}

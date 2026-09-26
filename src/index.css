@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Core palette – warm brown inspired by Demo 6 */
+  --color-brown: #8B6347;
+  /* main accent / card bg */
+  --color-brown-dark: #6E4F39;
+  /* darker variant */
+  --color-brown-light: #A8825E;
+  /* light accent */
+  --color-cream: #F7F3EE;
+  /* page background */
+  --color-cream-dark: #EDE5D8;
+  /* slightly deeper bg */
+  --color-offwhite: #FDFAF6;
+  /* card surface */
+
+  --color-text-main: #3D2B1F;
+  /* dark brown text */
+  --color-text-body: #5C4033;
+  /* body text */
+  --color-text-muted: #8C7265;
+  /* muted / label */
+  --color-text-white: #FFFFFF;
+
+  --color-border: #D4C4B0;
+  --color-accent: var(--color-brown);
+  --color-accent-hover: var(--color-brown-dark);
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-script: 'Italianno', cursive;
+
+  /* Spacing */
+  --spacing-section: 4.5rem;
+  --spacing-inner: 1.5rem;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-full: 9999px;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 6px 24px rgba(0, 0, 0, 0.10);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.14);
+
+  /* Invitation canvas */
+  --canvas-width: 430px;
+}
+
+/* ─── Reset ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #c8bfb5;
+  /* warm grey desktop gutter */
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ─── Invitation Canvas ────────────────────────────────── */
+.app-container {
+  max-width: var(--canvas-width);
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--color-cream);
+  position: relative;
+  overflow-x: hidden;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
+
+/* ─── Section Base ─────────────────────────────────────── */
+.section {
+  padding: var(--spacing-section) var(--spacing-inner);
+  position: relative;
+  text-align: center;
+}
+
+/* ─── Shared section title (script style) ──────────────── */
+.section-title {
+  font-family: var(--font-script);
+  font-size: 2.6rem;
+  color: var(--color-brown);
+  margin-bottom: 0.25rem;
+  line-height: 1.1;
+}
+
+.section-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 1.75rem;
+}
+
+/* ─── Decorative divider ───────────────────────────────── */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1.25rem auto;
+  color: var(--color-brown-light);
+  font-size: 1.1rem;
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  flex: 1;
+  max-width: 60px;
+  height: 1px;
+  background: var(--color-border);
+}
+
+/* ─── Button Primary ───────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-brown);
+  color: var(--color-text-white);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brown-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ─── Button Outline ───────────────────────────────────── */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-offwhite);
+  color: var(--color-brown);
+  border: 1px solid var(--color-brown);
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-brown);
+  color: var(--color-text-white);
+}
+
+/* ─── Animations ───────────────────────────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(139, 99, 71, 0.45);
+  }
+
+  70% {
+    box-shadow: 0 0 0 14px rgba(139, 99, 71, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(139, 99, 71, 0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.9s ease forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.9s ease forwards;
+  opacity: 0;
+}
+
+.delay-100 {
+  animation-delay: 0.10s;
+}
+
+.delay-200 {
+  animation-delay: 0.20s;
+}
+
+.delay-300 {
+  animation-delay: 0.30s;
+}
+
+.delay-400 {
+  animation-delay: 0.40s;
+}
+
+.delay-500 {
+  animation-delay: 0.50s;
+}
+
+.delay-600 {
+  animation-delay: 0.60s;
+}
+
+.delay-700 {
+  animation-delay: 0.70s;
+}
+
+/* ─── Brown card block (used by Quote, Event, Cashless, Wishes-list) */
+.brown-card {
+  background-color: var(--color-brown);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 1.5rem;
+  color: var(--color-text-white);
+}
+
+/* ─── Floral corner decoration placeholder (SVG inline) ─── */
+.floral-corner {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.30;
+}

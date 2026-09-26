@@ -1,0 +1,64 @@
+.countdown-section {
+  background-color: var(--color-cream);
+  padding: 3rem var(--spacing-inner) 2.5rem;
+  text-align: center;
+  position: relative;
+}
+
+/* ── Floral decoration (pure CSS) ──────────────────── */
+.countdown-floral {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(
+    ellipse at top right,
+    rgba(168, 130, 94, 0.18) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ── Timer grid ─────────────────────────────────────── */
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.75rem auto 1.75rem;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 62px;
+}
+
+.time-val {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--color-brown);
+  line-height: 1;
+}
+
+.time-label {
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-top: 0.35rem;
+}
+
+.countdown-finished {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--color-brown);
+  margin: 1rem 0 1.75rem;
+}
+
+.countdown-save-btn {
+  margin-top: 0;
+}

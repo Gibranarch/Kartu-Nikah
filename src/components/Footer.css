@@ -1,0 +1,52 @@
+.footer-section {
+  background-color: var(--color-cream);
+}
+
+/* ── Thank you area ─────────────────────────────────── */
+.footer-thankyou {
+  position: relative;
+  text-align: center;
+  padding: 3rem 2rem;
+  overflow: hidden;
+}
+
+.footer-floral {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--color-brown-light);
+  opacity: 0.22;
+  line-height: 1;
+}
+
+.footer-floral--left  { bottom: 0.5rem; left: 0.5rem; }
+.footer-floral--right { top: 0.5rem; right: 0.5rem; transform: scaleX(-1); }
+
+.footer-thank-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.footer-names {
+  font-family: var(--font-script);
+  font-size: 3rem;
+  color: var(--color-brown);
+  line-height: 1.1;
+}
+
+/* ── Bottom strip ───────────────────────────────────── */
+.footer-strip {
+  background-color: var(--color-brown);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+}
+
+.footer-strip__text {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.70);
+  letter-spacing: 0.5px;
+}
