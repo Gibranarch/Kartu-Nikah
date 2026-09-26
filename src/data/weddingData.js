@@ -11,21 +11,21 @@ export const weddingData = {
     parents: "Putri dari Bapak Fajar Semesta & Ibu Siti Semesta",
     photo: "/images/bride.jpg",
   },
-  date: "2026-10-25T09:00:00+07:00",
-  dateFormatted: "25 Oktober 2026",
-  guest: "Nindya",
+  date: "2026-12-31T09:00:00+09:00",
+  dateFormatted: "31 Desember 2026",
+  guest: "Jaxon Vierrana",
   coverImage: "/images/cover.jpg",
   events: [
     {
       title: "Akad Nikah",
-      date: "25 Oktober 2026",
+      date: "31 Desember 2026",
       time: "09:00 - 11:00",
       venue: "Le Meridien Bali Jimbaran",
       mapUrl: "https://maps.app.goo.gl/GMexKwMgdzAgUe7Y6",
     },
     {
       title: "Resepsi",
-      date: "25 Oktober 2026",
+      date: "31 Desember 2026",
       time: "11:00 - 15:00",
       venue: "VILLA PLENILUNIO BALI",
       mapUrl: "https://maps.app.goo.gl/7imq8JLvW6v5cxHU6",
@@ -55,10 +55,10 @@ export const weddingData = {
   initialWishes: [
     {
       id: 1,
-      name: "Carissa Reumenka",
+      name: "Carissa Natalia",
       whatsapp: "081234567890",
       attendance: "Hadir",
-      message: "Selamat ya Arif dan Nindy! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Lancar sampai hari H!",
+      message: "Selamat ya Ardan dan Carmen! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Lancar sampai hari H!",
       date: "2026-10-20T10:30:00",
     },
     {
@@ -66,7 +66,7 @@ export const weddingData = {
       name: "Jevana Alexandra",
       whatsapp: "082345678901",
       attendance: "Tidak Hadir",
-      message: "Maaf banget nggak bisa hadir karena sedang di luar kota. Selamat menempuh hidup baru untuk kalian berdua!",
+      message: "Maaf banget nggak bisa hadir karena sedang di luar Negeri. Selamat menempuh hidup baru untuk kalian berdua!",
       date: "2026-10-21T14:15:00",
     },
   ],
